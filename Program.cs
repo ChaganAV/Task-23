@@ -9,8 +9,13 @@ while(count <= num)
 {
     //Console.WriteLine($"{count} в кубе = {count*count*count}");
     if (count == num)
-        Console.Write($"{count*count*count}");
+        Console.Write($"{GetCube(num)}");
     else
-        Console.Write($"{count*count*count}, ");
+        Console.Write($"{GetCube(num)}, ");
     count++;
+}
+
+int GetCube(int num)
+{
+    return num*num*num;
 }
